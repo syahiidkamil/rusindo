@@ -21,7 +21,7 @@ const ProblemSolution = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Problems */}
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">
+            <h2 className="text-3xl font-bold font-heading mb-6 text-gray-900">
               Mengapa Bahasa Rusia Sulit untuk Orang Indonesia?
             </h2>
             <div className="space-y-4">
@@ -36,13 +36,13 @@ const ProblemSolution = () => {
 
           {/* Solutions */}
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-gray-900">
+            <h2 className="text-3xl font-bold font-heading mb-6 text-gray-900">
               RusIndo Learning Menyelesaikan Semua Itu!
             </h2>
             <div className="space-y-4">
               {solutions.map((solution, index) => (
                 <div key={index} className="flex items-start">
-                  <Check className="text-green-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                  <Check className="text-accent-green mr-3 mt-1 flex-shrink-0" size={20} />
                   <p className="text-gray-700">{solution}</p>
                 </div>
               ))}

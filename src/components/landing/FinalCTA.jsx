@@ -2,9 +2,9 @@ import { ArrowRight } from 'lucide-react';
 
 const FinalCTA = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-red-600 to-yellow-500">
+    <section className="py-16 bg-gradient-hero">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-4">
           Siap Memulai Perjalanan Bahasa Rusia Anda?
         </h2>
         
@@ -16,7 +16,7 @@ const FinalCTA = () => {
           Jangan tunggu lagi. Mulai hari ini dan rasakan bedanya belajar dengan metode yang tepat.
         </p>
         
-        <button className="bg-white text-red-600 px-10 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors inline-flex items-center mb-8">
+        <button className="bg-white text-primary-red px-10 py-4 rounded-lg font-bold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all inline-flex items-center mb-8">
           AMBIL TES PLACEMENT GRATIS
           <ArrowRight className="ml-2" size={24} />
         </button>

@@ -1,0 +1,54 @@
+:root {
+  /* Primary Colors */
+  --primary-red: #C41E3A;
+  --primary-gold: #FFD700;
+  --primary-navy: #1B365D;
+
+  /* Secondary Colors */
+  --secondary-red-light: #E53E5A;
+  --secondary-red-dark: #A01729;
+  --secondary-gold-light: #FFF59D;
+  --secondary-gold-dark: #F57F17;
+
+  /* Neutral Colors */
+  --neutral-white: #FFFFFF;
+  --neutral-gray-50: #F9FAFB;
+  --neutral-gray-100: #F3F4F6;
+  --neutral-gray-200: #E5E7EB;
+  --neutral-gray-300: #D1D5DB;
+  --neutral-gray-400: #9CA3AF;
+  --neutral-gray-500: #6B7280;
+  --neutral-gray-600: #4B5563;
+  --neutral-gray-700: #374151;
+  --neutral-gray-800: #1F2937;
+  --neutral-gray-900: #111827;
+
+  /* Accent Colors */
+  --accent-purple: #8B5CF6;
+  --accent-blue: #3B82F6;
+  --accent-green: #10B981;
+  --accent-yellow: #F59E0B;
+  --accent-pink: #EC4899;
+  --accent-indigo: #6366F1;
+
+  /* Semantic Colors */
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+}

@@ -25,23 +25,23 @@ const Testimonials = () => {
   return (
     <section id="testimoni" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-12 text-gray-900">
           Apa Kata Mereka yang Sudah Berhasil?
         </h2>
         
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+            <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all">
               <div className="mb-4">
                 <p className="text-gray-600 italic mb-4">"{testimonial.text}"</p>
               </div>
               
-              <div className="border-t pt-4">
+              <div className="border-t border-gray-200 pt-4">
                 <p className="font-bold text-gray-900">{testimonial.name}</p>
                 <p className="text-sm text-gray-500 mb-2">{testimonial.role}</p>
                 <div className="flex">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} size={16} className="text-yellow-400 fill-current" />
+                    <Star key={i} size={16} className="text-secondary-gold-dark fill-current" />
                   ))}
                 </div>
               </div>

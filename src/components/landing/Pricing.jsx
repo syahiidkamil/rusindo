@@ -57,7 +57,7 @@ const Pricing = () => {
   return (
     <section id="harga" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-12 text-gray-900">
           Paket Pembelajaran yang Terjangkau
         </h2>
         
@@ -65,17 +65,17 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`rounded-lg p-8 ${
+              className={`rounded-lg p-8 transition-all ${
                 plan.highlighted
-                  ? 'bg-red-50 border-2 border-red-500 shadow-lg scale-105'
-                  : 'bg-gray-50 border border-gray-200'
+                  ? 'bg-gradient-to-br from-red-50 to-yellow-50 border-2 border-primary-red shadow-xl scale-105'
+                  : 'bg-gray-50 border border-gray-200 hover:shadow-lg'
               }`}
             >
               <div className="text-center mb-6">
                 <div className="text-4xl mb-2">{plan.emoji}</div>
-                <h3 className="text-2xl font-bold text-gray-900">{plan.name}</h3>
+                <h3 className="text-2xl font-bold font-heading text-gray-900">{plan.name}</h3>
                 {plan.subtitle && (
-                  <p className="text-sm text-red-600 font-semibold">{plan.subtitle}</p>
+                  <p className="text-sm text-primary-red font-semibold">{plan.subtitle}</p>
                 )}
                 <p className="text-sm text-gray-600 mt-2">{plan.description}</p>
               </div>
@@ -88,23 +88,23 @@ const Pricing = () => {
               <ul className="space-y-3 mb-6">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start">
-                    <Check size={20} className="text-green-500 mr-2 flex-shrink-0" />
+                    <Check size={20} className="text-accent-green mr-2 flex-shrink-0" />
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
               </ul>
               
               {plan.discount && (
-                <p className="text-sm text-green-600 text-center mb-4 italic">
+                <p className="text-sm text-accent-green text-center mb-4 italic">
                   {plan.discount}
                 </p>
               )}
               
               <button
-                className={`w-full py-3 rounded-lg font-semibold transition-colors ${
+                className={`w-full py-3 rounded-lg font-semibold transition-all ${
                   plan.highlighted
-                    ? 'bg-red-600 text-white hover:bg-red-700'
-                    : 'bg-gray-800 text-white hover:bg-gray-900'
+                    ? 'bg-gradient-primary text-white hover:shadow-lg transform hover:-translate-y-0.5'
+                    : 'bg-primary-navy text-white hover:bg-gray-900'
                 }`}
               >
                 {plan.cta}

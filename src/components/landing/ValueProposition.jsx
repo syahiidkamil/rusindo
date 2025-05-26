@@ -22,9 +22,9 @@ const ValueProposition = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (
-            <div key={index} className="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+            <div key={index} className="text-center p-6 rounded-lg bg-gradient-card border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all">
               <div className="text-5xl mb-4">{value.icon}</div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900">{value.title}</h3>
+              <h3 className="text-xl font-bold font-heading mb-3 text-gray-900">{value.title}</h3>
               <p className="text-gray-600">{value.description}</p>
             </div>
           ))}

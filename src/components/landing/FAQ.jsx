@@ -34,20 +34,20 @@ const FAQ = () => {
   return (
     <section id="faq" className="py-16 bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold font-heading text-center mb-12 text-gray-900">
           Pertanyaan yang Sering Diajukan
         </h2>
         
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-sm">
+            <div key={index} className="bg-white rounded-lg shadow-sm hover:shadow-md transition-all">
               <button
                 onClick={() => toggleFAQ(index)}
                 className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
               >
                 <span className="font-semibold text-gray-900">❓ {faq.question}</span>
                 {openIndex === index ? (
-                  <ChevronUp size={20} className="text-gray-500" />
+                  <ChevronUp size={20} className="text-primary-red" />
                 ) : (
                   <ChevronDown size={20} className="text-gray-500" />
                 )}
