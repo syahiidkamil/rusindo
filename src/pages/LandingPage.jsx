@@ -1,25 +1,30 @@
-import React from 'react';
-import Hero from '../components/landing/Hero';
-import About from '../components/landing/About';
-import Features from '../components/landing/Features';
+import Navbar from '../components/common/Navbar';
+import HeroSection from '../components/landing/HeroSection';
+import SocialProofBar from '../components/landing/SocialProofBar';
+import ProblemSolution from '../components/landing/ProblemSolution';
+import ValueProposition from '../components/landing/ValueProposition';
 import HowItWorks from '../components/landing/HowItWorks';
-import Pricing from '../components/landing/Pricing';
+import LearningPaths from '../components/landing/LearningPaths';
 import Testimonials from '../components/landing/Testimonials';
+import Pricing from '../components/landing/Pricing';
 import FAQ from '../components/landing/FAQ';
-import CTA from '../components/landing/CTA';
-import Footer from '../components/landing/Footer';
+import FinalCTA from '../components/landing/FinalCTA';
+import Footer from '../components/common/Footer';
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <About />
-      <Features />
+      <Navbar />
+      <HeroSection />
+      <SocialProofBar />
+      <ProblemSolution />
+      <ValueProposition />
       <HowItWorks />
-      <Pricing />
+      <LearningPaths />
       <Testimonials />
+      <Pricing />
       <FAQ />
-      <CTA />
+      <FinalCTA />
       <Footer />
     </div>
   );
